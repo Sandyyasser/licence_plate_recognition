@@ -1,0 +1,30 @@
+path: 
+train: 
+   
+    - "/content/licence_plate/train/images"
+    - "/content/licence_plate/train/labels"
+val: 
+    - "/content/licence_plate/test/images"
+    - "/content/licence_plate/test/labels" 
+
+
+# class names
+names:
+  0: 'licence Plate'
+
+# Hyperparameters ------------------------------------------------------------------------------------------------------
+
+
+label_smoothing: 0.2  # label smoothing (fraction)
+hsv_h: 0.015  # image HSV-Hue augmentation (fraction)
+hsv_s: 0.7  # image HSV-Saturation augmentation (fraction)
+hsv_v: 0.4  # image HSV-Value augmentation (fraction)
+degrees: 0.4  # image rotation (+/- deg)
+translate: 0.1  # image translation (+/- fraction)
+scale: 0.2  # image scale (+/- gain)
+shear: 0.2  # image shear (+/- deg) from -0.5 to 0.5
+perspective: 0.1  # image perspective (+/- fraction), range 0-0.001
+flipud: 0.7  # image flip up-down (probability)
+fliplr: 0.5  # image flip left-right (probability)
+mosaic: 0.3  # image mosaic (probability)
+mixup: 0.1  # image mixup (probability)
